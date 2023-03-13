@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html {
+    font-size: 100%
+}
+
+body {
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(22,231,95,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0.75rem 0;
+    font-size: 2.5rem;
+    background-color: rgba(0,212,255,1);
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+div a {
+    color: rgba(0,212,255,1);
+}
+
+#imagem_texto_sobre_mim_curiosidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+#curiosidades {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem ;
+    width: 100%;
+}
+
+#imagem_texto_sobre_mim_curiosidades p {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+#imagem_texto_sobre_mim_curiosidades ul {
+    padding: 1.5rem;
+}
+
+#imagem_texto_sobre_mim_curiosidades img {
+
+    width: 13.625rem /*218px*/;
+    height: 18.125rem/*290px*/;
+    clip-path: circle(65%);
+    background: linear-gradient(90deg, rgba(22,231,95,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 0.8rem;
+}
+
+#imagem_texto_sobre_mim_curiosidades li {
+    font-size: 1.25rem;
+}
+
+#container_vinland_saga {
+    display: flex;
+    padding: 2rem;
+}
+
+#explicacao_vinland_saga {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem
+}
+
+#instrucoes_manga {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    color: #aaa;
+}
+
+#image_vinland_saga1 {
+    width: 37,5rem /*600px*/;
+    height: 43.75rem /*700px*/; 
+}
+
+#image_vinland_saga2 {
+    width: 29.06rem /*465px*/;
+    height: 43.75rem/*700px*/;
+}
+
+#obras_favoritas {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+#obras_favoritas img {
+    /*CADA UMA VAI OCUPAR 25%, CONFORME A TELA DIMINUA VÃO OCUPAR 50% E DPS 100%*/
+    width: 18.06rem /*289px*/;
+    height: 25.75rem /*412px*/;
+}
+/*REVISAR DAQUI PRA BAIXO*/
+.caixas_obras_favoritas {
+    padding: 2rem 4rem;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixas_obras_favoritas h3 {
+    font-size: 1.75rem;
+}
+
+.caixas_obras_favoritas p {
+    font-size: 1.5rem;
+}
+
+.caixas_obras_favoritas li {
+    font-size: 1.25rem;
+    list-style: none;
+}
+:hover.caixas_obras_favoritas {
+    transform: scale(1.1);
+    transition: 0.3s;
+    padding-top: 4rem;
+}
+
+:hover.caixas_obras_favoritas img {
+    clip-path: circle(65%);
+    background: linear-gradient(90deg, rgba(22,231,95,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 0.8em;
+}
+
+footer {
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(22,231,95,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 2rem;
+}
+
+footer h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem 0 2.5rem 0;
+}
+
+
+footer img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.75rem;
+    padding: 1rem 4rem 1rem 4rem;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+/* Celulares */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #container_vinland_saga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*#image_vinland_saga1 {
+        width: 37,5rem*600px;
+        height: 43.75rem 700px; 
+    }
+    
+    #image_vinland_saga2 {
+        width: 29.06rem 465px;
+        height: 43.75rem 700px;
+    }*/
+    #image_vinland_saga1 {
+        align-self: auto;
+
+        width: 18.75rem /*300px*/;
+        height: 21.875rem /*350px*/; 
+    }
+    
+    #image_vinland_saga2 {
+        width: 18.1625 /*232,5px*/;
+        height: 27.34rem/*350px*/;
+    }
+
+    #obras_favoritas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixas_obras_favoritas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 4rem 2rem 4rem;
+        width: 100%;
+    }
+
+    footer ul li {
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+
+/* Tablets */
+@media screen and (max-width: 1200px) {
+
+    
+
+}
+@media screen and (max-width: 1700px) {
+
+    p {
+        text-align: center;
+    }
+
+    #imagem_texto_sobre_mim_curiosidades {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+
+    #imagem_texto_sobre_mim_curiosidades div {
+        width: 100%;
+    }
+
+    #imagem_texto_sobre_mim_curiosidades P {
+        padding: 2rem 4rem;
+    }
+
+    #imagem_texto_sobre_mim_curiosidades ul {
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+
+    #curiosidades {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 0.75rem 0;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    #container_vinland_saga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container_vinland_saga img{
+        margin-bottom: 3rem;
+    }
+
+    .caixas_obras_favoritas {
+        padding: 2rem 2rem;
+        width: 40%;
+    }
+
+    #obras_favoritas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+}
